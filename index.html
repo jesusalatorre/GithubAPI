@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Github Api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="six columns selection-menu">
+            <div class="row selection-menu-step1" >
+                <h3>I'm looking for </h3> <h3 id='step1-answer'></h3><br>
+               <button class="selection-step1-button">users</button> <button class="selection-step1-button">orgs</button> <button class="selection-step1-button">repos</button>
+           </div>
+ 
+           <div class="row selection-menu-step2 hidden">
+               <h3>Step 2</h3> <h3 id="step2-answer"></h3><br>
+               <button class="selection-step2-button">single user</button> <button class="selection-step2-button">multiple users</button>
+           </div>
+           <div class="row selection-menu-step3 hidden">
+               <input type="text" id="selection-input"> <button id="submit-query">submit</button>
+           </div>
+ 
+       </div>
+       <div class="six columns output">
+           <div class="row user-output">
+ 
+           </div>
+       </div>
+   </div>
+ 
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src='js/main.js'></script>
+</body>
+</html>
